@@ -1,0 +1,123 @@
+@import 'variables';
+
+.photo {
+  background-color: white;
+  
+  .custom-container {
+    
+    .img-fluid {
+      border-radius: $alert-border-radius;
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    .hero-search-box {
+      position: relative;
+      max-width: 752px;
+      z-index: 2;
+      padding-left: 16px;
+      padding-right: 16px;
+      
+      .wrapper {
+        background-color: white;
+        border-radius: 100px;
+        height: 96px;
+        padding: 0 48px;
+        margin-top: -48px;
+        box-shadow: 4px 12px 24px 0px rgba(0, 0, 0, 0.12); 
+        
+        .input-item {
+          position:relative;
+          display: block;
+          width: 100%;
+          max-width: none;
+          opacity: 1;
+          margin-top: -5px;
+          
+          .field-wrapper {
+            background-color: white;
+            position: relative;
+            
+            .input-field {
+              position:relative;
+              display: block;
+              width: 100%;
+              background-color: white;
+              height: 32px;
+              padding: 5px; // Added padding for better visibility
+              border: 0;
+              box-shadow: none;
+              font-size: 24px; // Match the placeholder font size for consistency
+              outline: none;
+            }
+            
+            .placeholder {
+              font-family: 'AptaRegular';
+              font-weight: normal;
+              font-size: 24px;
+              line-height: 32px;
+              color: #667085;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              padding: 5px;
+              pointer-events: none;
+              transition: transform 0.2s, opacity 0.2s;
+            }
+            
+            .input-field:focus + .placeholder,
+            .input-field:not(:placeholder-shown) + .placeholder {
+              transform: translateY(-5%);
+              border:none;
+              opacity: 0;
+            }
+          }
+        }
+        
+        svg {
+          width: 32px;
+          height: 32px;
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+@media(max-width:425px){
+  .photo{
+    .custom-container{
+      .img-fluid{
+        width:100%;
+        object-fit: cover;
+        height:240px;
+      }
+      .hero-search-box{
+        .wrapper{
+          padding-left:24px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-right:24px;
+          .input-item{
+            .field-wrapper{
+              .placeholder{
+                font-size: 13px;
+                line-height: 28px;
+                
+              }
+            }
+          }
+          .icon-default{
+            width:20px;
+            height:20px;
+          }
+
+        }
+
+      }
+    }
+  }
+}

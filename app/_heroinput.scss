@@ -1,0 +1,40 @@
+.heroinput{
+    .custom-container{
+        background-color: #E5E7E9;
+        border:2px solid #175CD3;
+        border-radius: 16px;
+        padding-top: 64px;
+        padding-bottom: 80px;
+        .layer{
+            margin-bottom:40px;
+            .breadcrumb{
+                margin-top:0;
+            }
+        }
+        h1{
+            font-family: 'AptaRegular';
+            font-weight: 'normal';
+            font-size: 60px;
+            line-height: 72px;
+            margin-bottom: 40px;
+            padding:0;
+    
+        }
+        .d-flex{
+            padding:0;
+            a{
+                font-family: 'AptaRegular';
+                font-weight: 'normal';
+                font-size: 15px;
+                line-height: 30px;
+                margin-right: 24px;
+                color: black;
+                text-decoration:2px #175CD3 underline;
+                text-underline-offset: 4px;
+                padding: 0;
+            }
+        }
+
+    }
+   
+}

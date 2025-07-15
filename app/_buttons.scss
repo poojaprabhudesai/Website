@@ -1,0 +1,147 @@
+.btn{
+    padding:5px 25px;
+    font-family: 'AptaBold';
+    font-weight: bold;
+    font-size: 16px;
+    margin-top:32px;
+    border:2px solid #BEC3C8;
+    svg{
+        margin-left:4px;
+        margin-top: 12px;
+        margin-bottom:12px;
+    }
+
+    &:hover{
+        border:2px solid #101828;
+            
+    }
+    &:active{
+        background-color:transparent;
+        border:3px solid #101828;
+        outline:none;
+    }
+    &:focus{
+        border:2px solid #BEC3C8;
+        outline:1px solid #E5E7E9;
+        outline-offset: 4px;
+    }
+    &:disabled{
+        background-color: #f0f0f0; /* Change background color when disabled */
+        cursor: not-allowed; /* Show not-allowed cursor */
+        opacity: 0.5; /* Reduce opacity to indicate disabled state */
+    }
+}
+.btn-item {
+
+    .btn {
+        font-family: 'AptaRegular';
+        font-weight: bold;
+        font-style: normal;
+        font-size: 16px;
+        padding:2px 20px;
+        line-height: 24px;
+        border:2px solid #BEC3C8;
+        margin-top:0;
+
+        &:hover{
+            border:2px solid #101828;
+            
+        }
+        &:active{
+            background-color:transparent;
+            border:3px solid #101828;
+            outline:none;
+        }
+        &:focus{
+            border:2px solid #BEC3C8;
+            outline:1px solid #E5E7E9;
+            outline-offset: 4px;
+        }
+        &:disabled{
+            
+            background-color: #f0f0f0; /* Change background color when disabled */
+            cursor: not-allowed; /* Show not-allowed cursor */
+            opacity: 0.5; /* Reduce opacity to indicate disabled state */
+        }
+    }
+}
+.btn-1{
+    padding:5px 25px;
+    font-family: 'AptaBold';
+    font-weight: bold;
+    font-size: 16px;
+    margin-top:32px;
+    border:2px solid #175CD3;
+    color:#175CD3;
+    svg{
+        margin-left:4px;
+        margin-top: 12px;
+        margin-bottom:12px;
+        path{
+            fill:#175CD3;
+        }
+    }
+
+    &:hover{
+        border:2px solid #175CD3
+            
+    }
+    &:active{
+        background-color:transparent;
+        border:3px solid #175CD3;
+        outline:none;
+    }
+    &:focus{
+        border:2px solid #BEC3C8;
+        outline:1px solid #E5E7E9;
+        outline-offset: 4px;
+    }
+    &:disabled{
+        background-color: #f0f0f0; /* Change background color when disabled */
+        cursor: not-allowed; /* Show not-allowed cursor */
+        opacity: 0.5; /* Reduce opacity to indicate disabled state */
+    }
+}
+.card-btn{
+    background: white;
+    font-family: 'AptaRegular';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0; 
+    border: none; 
+    text-align: left; 
+    width: auto; 
+    margin-top:8px;
+    margin-bottom: 0;
+   
+
+    svg{
+        transition: transform 0.3s ease-in-out;
+
+    }
+    
+    &:hover{
+        background-size:100% 2px;
+        background-position: 0% 100%;
+        
+        svg{
+            transform: translateX(5px); // Adjust the value as needed
+            
+        }
+    }
+    &:active{
+        span{
+            border:none;
+        }
+       
+    }
+    &:focus{
+        span{
+            border:none;
+
+        }
+    }
+
+}
+

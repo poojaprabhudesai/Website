@@ -1,0 +1,159 @@
+.filelist {
+    margin-top: 80px;
+    .container {
+        .container-1 {
+            .d-flex {
+                padding-left: 0;
+                font-family: 'AptaRegular';
+                font-weight: normal;
+                font-size: 48px;
+            }
+        }
+
+        .download-container {
+            position: relative; 
+            color: black; 
+
+            a {
+                margin-bottom:16px;
+                display: block; 
+                color:black;
+                h6 {
+                    font-family: 'AptaRegular';
+                    font-weight: normal;
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                    color: black; 
+                    padding-top: 16px;
+                }
+
+                span {
+                    color: black; 
+
+                    .wrapper-6 {
+                        border-right: 2px solid #BEC3C8;
+
+                        .badge {
+                            border: 2px solid #BEC3C8;
+                            font-family: 'AptaBold';
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 2px 7px;
+                            line-height: 18px;
+                            margin-right: 16px;
+                            color: black; // Text color for .badge within .wrapper-6
+                            transition: border 0.3s ease;
+                            transition: outline 0.3s ease;
+                            &:hover{
+                                background-color:#F2F3F4;      
+                            }
+                            &:active{
+                                background-color:#CBCFD3;
+                            }
+                            &:focus{
+                                outline:1px solid #E5E7E9;
+                                outline-offset: 4px;
+                            }
+                            &:disabled{
+                                background-color:#F2F3F4 ;
+                            }
+                        }
+                    }
+
+                    .wrapper-7 {
+                        .label-red {
+                            color: #FF5D64; // Specific color for badge-danger
+                            background-color:hsla(357, 100%, 68%, 0.151);
+                            font-family: 'AptaBold';
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 2px 8px;
+                            margin-left: 16px;
+                            line-height: 18px;
+                            &:hover{
+                                color:#FF5D64;
+                                background-color: hsla(357, 100%, 68%, 0.20);
+                            }
+                            &:active{
+                                color:#FF5D64;
+                                background-color:hsla(357, 100%, 68%, 0.20);
+                            }
+                            &:focus{
+                                color: #FF5D64;
+                                background-color:#FFE3E5;
+                                outline:1px solid #E5E7E9;
+
+                            }
+                            &:disabled{
+                                color: #F2F3F4;
+                                background-color:#F2F3F4 ;
+
+                            }
+                        }
+
+                        .label-blue {
+                            color: #175CD3; // Specific color for badge-primary
+                            background-color: hsla(218, 80%, 46%, 0.150);
+                            font-family: 'AptaBold';
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 2px 8px;
+                            margin-left: 8px;
+                            line-height: 18px;
+                            &:hover{
+                                color:#175CD3;
+                                background-color: hsla(218, 80%, 46%, 0.20);
+                            }
+                            &:active{
+                                color:#175CD3;
+                                background-color: hsla(218, 80%, 46%, 0.20);
+                            }
+                            &:focus{
+                                color: #175CD3;
+                                background-color:#FFE3E5;
+                                outline:1px solid #E5E7E9;
+
+                            }
+                            &:disabled{
+                                color: #F2F3F4;
+                                background-color:#F2F3F4 ;
+
+                            }
+                        }
+                    }
+                }
+
+                .d-flex {
+                    color:black;
+                    h4 {
+                        width:100%;
+                        font-family: 'AptaBold';
+                        font-weight: bold;
+                        font-size: 24px;
+                        color: black; // Text color for <h4> within the .d-flex
+                        text-decoration: none;
+                    }
+                    a{
+                        svg path{
+                            display: flex;
+                            margin-right:7px;
+                        }
+
+                    }
+
+                    
+
+                    margin: 16px 0 24px;
+                }
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+            &:not(:last-of-type) {
+                border-bottom: 1px solid #d1d1d1; // Apply border to all but last
+            }
+        }
+    }
+
+}

@@ -1,0 +1,286 @@
+.filelist-3 {
+    margin-top: 80px;
+    .container {
+        .container-1 {
+            .d-flex {
+                .text-left{
+                    margin-bottom: 32px;
+                    padding-left: 0;
+                    font-family: 'AptaRegular';
+                    font-weight: normal;
+                    font-size: 48px;
+
+                }
+                
+            }
+        }
+        .download-container {
+            position: relative; 
+            color: black; 
+            border-bottom:2px solid #BEC3C8;
+            a {
+                display: block; 
+                color:black;
+                margin-bottom:24px;
+                margin-top: 24px;
+                .d-flex{
+                    column-gap:16px;
+                    h6{
+                        font-family: 'AptaRegular';
+                        font-weight: normal;
+                        font-size: 16px;
+                        margin-top:0;
+                        justify-content: flex-start;
+                    }
+            
+                }
+                
+                .d-flex-1{
+                    display: inline-flex;
+                    
+                    .wrapper-1{
+                        border-right: 2px solid #BEC3C8;
+                        .badge {
+                            border: 2px solid #BEC3C8;
+                            font-family: 'AptaBold';
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 2px 7px; 
+                            line-height: 18px;
+                            margin-right: 16px;
+                            transition: border 0.3s ease, outline 0.3s ease;
+            
+                            &:hover {
+                                background-color: #F2F3F4;      
+                            }
+            
+                            &:active {
+                                background-color: #CBCFD3;
+                            }
+            
+                            &:focus {
+                                outline: 1px solid #E5E7E9;
+                                outline-offset: 4px;
+                            }
+            
+                            &:disabled {
+                                background-color: #F2F3F4;
+                            }
+                        }
+            
+            
+                    }
+                    .wrapper-2{
+                        padding-left: 16px;
+                        column-gap: 8px;
+                        .label-red {
+                            position:relative;
+                            font-family: 'AptaBold';
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 2px 7px; 
+                            line-height: 18px;
+                            color: #FF5D64;
+                            background-color: #FFE3E5;
+            
+                            &:hover {
+                                color: #FF5D64;
+                                background-color: hsla(357, 100%, 68%, 0.204);
+                            }
+            
+                            &:active {
+                                color: #FF5D64;
+                                background-color: hsla(357, 100%, 68%, 0.204);
+                            }
+            
+                            &:focus {
+                                color: #FF5D64;
+                                background-color: #FFE3E5;
+                                outline: 1px solid #E5E7E9;
+                            }
+            
+                            &:disabled {
+                                color: #F2F3F4;
+                                background-color: #F2F3F4;
+                            }
+                        }
+            
+                        .label-blue {
+                            position:relative;
+                            font-family: 'AptaBold';
+                            font-weight: bold;
+                            font-size: 12px;
+                            margin-left:8px;
+                            padding: 2px 7px; 
+                            line-height: 18px;
+                            color: #175CD3;
+                            background-color: hsla(218, 80%, 46%, 0.150);    
+            
+                            &:hover {
+                                color: #175CD3;
+                                background-color: hsla(218, 80%, 46%, 0.20);
+                            }
+            
+                            &:active {
+                                color: #175CD3;
+                                background-color: hsla(218, 80%, 46%, 0.20);
+                            }
+            
+                            &:focus {
+                                color: #175CD3;
+                                background-color: hsla(218, 80%, 46%, 0.150);
+                                outline: 1px solid #E5E7E9;
+                            }
+            
+                            &:disabled {
+                                color: #F2F3F4;
+                                background-color: #F2F3F4;
+                            }
+                        }
+            
+                        .label-green {
+                            position:relative;
+                            font-family: 'AptaBold';
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 2px 7px;
+                            line-height: 18px;
+                            margin-left: 8px;
+                            color: #027A48;
+                            background-color: hsla(155, 97%, 24%, 0.15);
+            
+                            &:hover {
+                                color: #027A48;
+                                background-color: hsla(155, 97%, 24%, 0.209);
+                            }
+            
+                            &:active {
+                                color: #027A48;
+                                background-color: hsla(155, 97%, 24%, 0.209);
+                            }
+            
+                            &:focus {
+                                color: #027A48;
+                                background-color: #FFE3E5;
+                                outline: 1px solid #E5E7E9;
+                            }
+                        }
+                        .label-grey {
+                            font-family: 'AptaBold';
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 2px 7px;
+                            line-height: 18px;
+                            margin-left: 8px;
+                            color: #667085;
+                            background-color: hsla(221, 13%, 46%, 0.150);
+            
+                            &:hover {
+                                color: #667085;
+                                background-color: hsla(221, 13%, 46%, 0.200);
+                            }
+            
+                            &:active {
+                                color: #667085;
+                                background-color: hsla(221, 13%, 46%, 0.200);
+                            }
+            
+                            &:focus {
+                                color: #667085;
+                                background-color: #FFE3E5;
+                                outline: 1px solid #E5E7E9;
+                            }
+                        }
+                        .label-purple {
+                            font-family: 'AptaBold';
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 2px 7px;
+                            line-height: 18px;
+                            margin-left: 8px;
+                            color: #A456D4;
+                            background-color: hsla(277, 59%, 58%, 0.151);
+            
+                            &:hover {
+                                color: #A456D4;
+                                background-color:hsla(277, 59%, 58%, 0.200);
+                            }
+            
+                            &:active {
+                                color: #A456D4;
+                                background-color: hsla(277, 59%, 58%, 0.200);
+                            }
+            
+                            &:focus {
+                                color: #A456D4;
+                                background-color: #FFE3E5;
+                                outline: 1px solid #E5E7E9;
+                            }
+                        }
+                        .label-pink {
+                            font-family: 'AptaBold';
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 2px 7px;
+                            line-height: 18px;
+                            margin-left: 8px;
+                            color: #D94295;
+                            background-color: hsla(327, 67%, 55%, 0.151);
+            
+                            &:hover {
+                                color: #D94295;
+                                background-color: hsla(327, 67%, 55%, 0.200);
+                            }
+            
+                            &:active {
+                                color: #D94295;
+                                background-color: hsla(327, 67%, 55%, 0.200);
+                            }
+            
+                            &:focus {
+                                color: #D94295;
+                                background-color: #FFE3E5;
+                                outline: 1px solid #E5E7E9;
+                            }
+                        }
+                    }
+                    
+                }
+
+                .title {
+                    color:black;
+                    h4 {
+                        width:100%;
+                        font-family: 'AptaBold';
+                        font-weight: bold;
+                        font-size: 24px;
+                        color: black; // Text color for <h4> within the .d-flex
+                        text-decoration: none;
+                    }
+                    a{
+                        svg {
+                            display: flex;
+                            margin-right: 20px;
+                        }
+                        margin-top: 0; 
+
+                    }
+                    
+                    
+                }
+                
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            &:last-child{
+                border-bottom:none;
+            }
+
+           
+        }
+    }
+}
+
+        

@@ -1,0 +1,55 @@
+@import 'variables';
+.imgtext {
+    margin-top: 80px;
+
+    .row {
+        .col-md-5{
+            .img-fluid{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius:$alert-border-radius ;
+
+            }
+        }
+        .col-md-6 {
+            padding-top: 14px;
+            padding-bottom: 14px;
+
+            h5 {
+                font-family: 'AptaRegular';
+                font-weight: normal;
+                font-size: 48px;
+                margin-bottom: 24px;
+                line-height: 60px;
+            }
+
+            p {
+                font-family: 'AptaRegular';
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+        }
+    }
+}
+@media(max-width:325px){
+    .imgtext{
+        .row{
+            .col-md-6{
+                .btn{
+                    font-size:13px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+            }
+            
+
+        }
+        
+    }
+   
+}

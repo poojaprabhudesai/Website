@@ -1,0 +1,184 @@
+@import 'variables';
+
+.newsletter {
+  background-color: white;
+  margin-bottom: 56px;
+  margin-top:40px;
+  
+  .custom-container {
+    background-color: #E5E7E9;
+    border-radius: $alert-border-radius;
+
+    .container {
+      .wrapper {
+        padding-top:64px;
+        h3{
+          justify-content: center;
+          padding-top: 32px;
+          margin-bottom: 32px;
+          text-align: center;
+          font-family: 'AptaRegular';
+          font-weight: normal;
+          font-size: 48px;
+        }
+       
+      }
+
+      .container {
+        .wrapper-3 {
+          justify-content: center;
+          column-gap: 40px;
+
+          .form-group {
+            max-width: 380px;
+            width: 100%;
+            
+            .form-check-label{
+              font-family: 'AptaRegular';
+              font-weight: normal;
+              font-size: 14px;
+              margin-bottom: 0;
+            }
+
+            .form-control {
+              height: 64px;
+              border-radius: 8px;
+              max-width: 380px;
+              background-color: transparent;
+            }
+          }
+        }
+
+        .wrapper-4 {
+          justify-content: center;
+          column-gap: 80px;
+
+          .form-group {
+            margin-top: 44px;
+            line-height: 14px;
+
+            input {
+              width: 16px;
+              height: 16px;
+              border: 1px solid #101828;
+              border-radius: 2px;
+
+              &:checked ~ .checkmark {
+                background-color: black;
+
+                &::after {
+                  display: block;
+                }
+              }
+            }
+
+            .custom-Checkbox {
+              display: flex;
+              
+            }
+            .form-check-label {
+              display: flex;
+              align-items: center; 
+              font-family: 'AptaRegular';
+              font-weight: normal;
+              font-size: 14px;
+              line-height:20px;
+              margin:0;
+              padding-left:8px;
+              
+             
+
+              .checkmark {
+                position: relative;
+                height: 20px;
+                width: 20px;
+                border: 2px solid #101828;
+                border-radius: 4px;
+                margin-left: 10px;
+                color: #BEC3C8;
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  display: none;
+                  left: 7px;
+                  top: 3px;
+                  width: 5px;
+                  height: 10px;
+                  border: solid white;
+                  border-width: 0 3px 3px 0;
+                  transform: rotate(45deg);
+                }
+              }  
+            }
+          }
+
+  
+
+          padding-bottom: 64px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .newsletter{
+    .custom-container{
+      .container{
+        .container{
+          .wrapper-4{
+            .form-group{
+              display:flex;
+              .form-check-label{
+                font-family: 'AptaRegular';
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 8px;
+              }
+            }
+
+          }
+          
+        }
+      }
+    }
+  }
+   
+}
+@media(max-width:425px){
+  .newsletter{
+    .custom-container{
+      .container{
+        .wrapper{
+          h3{
+            font-family: 'AptaRegular';
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 44px;
+          }
+        }
+        .container{
+          .wrapper-3{
+            flex-direction: column;
+            column-gap: 40px; 
+          }
+          .wrapper-4{
+            flex-direction: column;
+            column-gap: 40px; 
+            .form-group{
+              display:flex;
+              .form-check-label{
+                font-family: 'AptaRegular';
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

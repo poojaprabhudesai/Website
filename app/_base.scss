@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'MabryPro';
+  src: url('../assets/fonts/Mabry/MabryPro-Bold.woff2') format('woff2'),
+       url('../assets/fonts/Mabry/MabryPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MabryPro';
+  src: url('../assets/fonts/Mabry/MabryPro-Regular.woff2') format('woff2'),
+       url('../assets/fonts/Mabry/MabryPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AptaBold';
+  src: url('../fonts/Apta/AptaPro-Bold.woff') format('woff'),
+       url('../fonts/Apta/AptaPro-Bold.woff2') format('woff2');
+      
+  font-weight: Bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AptaRegular';
+  src: url('../fonts/Apta/AptaPro-Regular.woff2') format('woff'),
+       url('../fonts/Apta/AptaPro-Regular.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin hide-horizontal-overflow {
+    overflow-x: hidden;
+  }
+  html, body {
+    @include hide-horizontal-overflow;
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 0 20px;
+    }
+  }
+  

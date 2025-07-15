@@ -1,0 +1,499 @@
+.postslider-5 {
+    margin-top: 80px;
+    
+    .container {
+        
+        .d-flex {
+            
+            justify-content: space-between;
+            padding:0;
+
+            h1 {
+                font-family: 'AptaRegular';
+                font-weight: normal;
+                font-size: 48px;
+                text-align: left;
+            }
+
+            .button-container {
+                display: flex;
+                order: 1;
+                margin-right: 90px;
+               
+                .custom-button-prev{
+                    opacity:1;
+                    .btn-2{
+                        
+                        margin-bottom: 10px;
+                        .swiper-button-prev{
+                            column-gap: 40px;
+                            left:0;
+                            right:50px;
+                            &::after{
+                                content:"" !important;
+                            }
+                            
+                            svg{
+                                position:absolute;
+        
+                            }
+                        }
+                    
+
+                    }
+                    
+                    
+                   
+                }
+                .custom-button-next{
+
+                    margin-bottom: 10px;
+                    opacity:1;
+                    .btn-2{
+                        .swiper-button-next{
+                            right:0;
+                            left:50px;
+                            &::after{
+                                content:"" !important;
+                            }
+                            svg{
+                                position:absolute;
+        
+                            }
+                            &:disabled  path {
+                                background-color: #ccc; // Disabled background color
+                                cursor: not-allowed;
+                                color: #666; // Disabled text color
+                                border-color: #999; // Disabled border color
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        .text-3 {
+            margin-top:32px;
+            font-family: 'AptaRegular';
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+
+            .label-dark {
+                font-family: 'AptaBold';
+                font-weight: bold;
+                font-size: 12px;
+                padding: 2px 8px; 
+                align-items: center;
+                line-height: 18px;
+                margin-right: 16px;
+                color: white;
+                background-color: #101828;
+
+                svg {
+                    padding-right: 4px;
+                    overflow: visible;
+                }
+
+                &:hover {
+                    color: white;
+                    background-color: #CBCFD3;     
+                }
+
+                &:active {
+                    color: #BEC3C8;
+                    background-color: #101828;  
+                }
+
+                &:focus {
+                    color: white;
+                    background-color: black;
+                    outline: 1px solid #E5E7E9;
+                    outline-offset: 4px;
+                }
+            }
+
+            .label {
+                font-family: 'AptaBold';
+                font-weight: bold;
+                font-size: 12px;
+                border: 2px solid #BEC3C8;
+                padding: 2px 8px; 
+                align-items: center;
+                line-height: 18px;
+                margin-bottom: 16px;
+                margin-right: 16px;
+                color: black;
+                transition: border 0.3s ease, outline 0.3s ease;
+
+                &:hover {
+                    background-color: #F2F3F4;      
+                }
+
+                &:active {
+                    background-color: #CBCFD3;
+                }
+
+                &:focus {
+                    outline: 1px solid #E5E7E9;
+                    outline-offset: 4px;
+                }
+
+                &:disabled {
+                    background-color: #F2F3F4;
+                }
+            }
+        }
+    }
+
+    .fifth-swiper-container{
+        width: 100%;
+        margin-top: 32px;
+        .swiper-wrapper{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-sizing: content-box;
+            display: flex; 
+            flex-wrap: nowrap;
+            .swiper-slide{
+                margin-right: 30px;
+                flex-shrink: 0;
+                display: block;
+                height: auto;
+                .post-slider-box-1 {
+                    height:100%;
+                    a {
+                        height: 100%;
+                        text-decoration: none;
+        
+                        .card {
+                            height: 100%;
+                            width: 100%;
+                            border: 2px solid #BEC3C8;
+                            border-radius: $alert-border-radius;
+                            display: flex;
+                            align-content: flex-start;
+                            flex-direction: column;
+        
+                            .card-body {
+                                width: 100%;
+                                color: black;
+        
+                                img {
+                                    width: 100%;
+                                }
+        
+                                h6 {
+                                    font-family: 'AptaRegular';
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    margin-top: 24px;
+                                    margin-bottom: 8px;
+                                    justify-content: flex-start;
+                                }
+        
+                                .d-flex-1 {
+                                    margin-top: 8px;
+                                    display: inline-flex;
+        
+                                    .wrapper-1 {
+                                        border-right: 2px solid #BEC3C8;
+        
+                                        .badge {
+                                            border: 2px solid #BEC3C8;
+                                            font-family: 'AptaBold';
+                                            font-weight: bold;
+                                            font-size: 12px;
+                                            padding: 2px 7px; 
+                                            line-height: 18px;
+                                            margin-right: 16px;
+                                            transition: border 0.3s ease, outline 0.3s ease;
+        
+                                            &:hover {
+                                                background-color: #F2F3F4;      
+                                            }
+        
+                                            &:active {
+                                                background-color: #CBCFD3;
+                                            }
+        
+                                            &:focus {
+                                                outline: 1px solid #E5E7E9;
+                                                outline-offset: 4px;
+                                            }
+        
+                                            &:disabled {
+                                                background-color: #F2F3F4;
+                                            }
+                                        }
+                                    }
+        
+                                    .wrapper-2 {
+                                        padding-left: 16px;
+                                        column-gap: 8px;
+        
+                                        .label-red {
+                                            position:relative;
+                                            font-family: 'AptaBold';
+                                            font-weight: bold;
+                                            font-size: 12px;
+                                            padding: 2px 7px; 
+                                            line-height: 18px;
+                                            color: #FF5D64;
+                                            background-color: #FFE3E5;
+        
+                                            &:hover {
+                                                color: #FF5D64;
+                                                background-color: hsla(357, 100%, 68%, 0.204);
+                                            }
+        
+                                            &:active {
+                                                color: #FF5D64;
+                                                background-color: hsla(357, 100%, 68%, 0.204);
+                                            }
+        
+                                            &:focus {
+                                                color: #FF5D64;
+                                                background-color: #FFE3E5;
+                                                outline: 1px solid #E5E7E9;
+                                            }
+        
+                                            &:disabled {
+                                                color: #F2F3F4;
+                                                background-color: #F2F3F4;
+                                            }
+                                        }
+        
+                                        .label-blue {
+                                            position:relative;
+                                            font-family: 'AptaBold';
+                                            font-weight: bold;
+                                            font-size: 12px;
+                                            padding: 2px 7px; 
+                                            margin-top: 8px;
+                                            line-height: 18px;
+                                            color: #175CD3;
+                                            margin-bottom: 8px;
+                                            background-color: hsla(218, 80%, 46%, 0.150);    
+        
+                                            &:hover {
+                                                color: #175CD3;
+                                                background-color: hsla(218, 80%, 46%, 0.20);
+                                            }
+        
+                                            &:active {
+                                                color: #175CD3;
+                                                background-color: hsla(218, 80%, 46%, 0.20);
+                                            }
+        
+                                            &:focus {
+                                                color: #175CD3;
+                                                background-color: hsla(218, 80%, 46%, 0.150);
+                                                outline: 1px solid #E5E7E9;
+                                            }
+        
+                                            &:disabled {
+                                                color: #F2F3F4;
+                                                background-color: #F2F3F4;
+                                            }
+                                        }
+        
+                                        .label-green {
+                                            position:relative;
+                                            font-family: 'AptaBold';
+                                            font-weight: bold;
+                                            font-size: 12px;
+                                            padding: 2px 7px;
+                                            line-height: 18px;
+                                            color: #027A48;
+                                            background-color: hsla(155, 97%, 24%, 0.15);
+        
+                                            &:hover {
+                                                color: #027A48;
+                                                background-color: hsla(155, 97%, 24%, 0.209);
+                                            }
+        
+                                            &:active {
+                                                color: #027A48;
+                                                background-color: hsla(155, 97%, 24%, 0.209);
+                                            }
+        
+                                            &:focus {
+                                                color: #027A48;
+                                                background-color: #FFE3E5;
+                                                outline: 1px solid #E5E7E9;
+                                            }
+                                        }
+                                        .label-grey {
+                                            font-family: 'AptaBold';
+                                            font-weight: bold;
+                                            font-size: 12px;
+                                            padding: 2px 7px;
+                                            line-height: 18px;
+                                            margin-left: 8px;
+                                            color: #667085;
+                                            background-color: hsla(221, 13%, 46%, 0.150);
+        
+                                            &:hover {
+                                                color: #667085;
+                                                background-color: hsla(221, 13%, 46%, 0.200);
+                                            }
+        
+                                            &:active {
+                                                color: #667085;
+                                                background-color: hsla(221, 13%, 46%, 0.200);
+                                            }
+        
+                                            &:focus {
+                                                color: #667085;
+                                                background-color: #FFE3E5;
+                                                outline: 1px solid #E5E7E9;
+                                            }
+                                        }
+                                        .label-purple {
+                                            font-family: 'AptaBold';
+                                            font-weight: bold;
+                                            font-size: 12px;
+                                            padding: 2px 7px;
+                                            line-height: 18px;
+                                            color: #A456D4;
+                                            background-color: hsla(277, 59%, 58%, 0.151);
+        
+                                            &:hover {
+                                                color: #A456D4;
+                                                background-color:hsla(277, 59%, 58%, 0.200);
+                                            }
+        
+                                            &:active {
+                                                color: #A456D4;
+                                                background-color: hsla(277, 59%, 58%, 0.200);
+                                            }
+        
+                                            &:focus {
+                                                color: #A456D4;
+                                                background-color: #FFE3E5;
+                                                outline: 1px solid #E5E7E9;
+                                            }
+                                        }
+                                    }
+                                }
+        
+                                h5 {
+                                    width: 100%;
+                                    margin-top: 24px;
+                                    font-family: 'AptaBold';
+                                    font-weight: bold;
+                                    font-size: 24px;
+                                }   
+        
+                                p {
+                                    width: 100%;
+                                    margin-top: 8px;
+                                    font-family: 'AptaRegular';
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                }    
+        
+                                .btn-underline {
+                                    font-family: 'AptaRegular';
+                                    font-weight: normal;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                    text-decoration: underline 2px #BEC3C8;
+                                    text-underline-offset: 4px;
+                                    padding: 0; 
+                                    border: none; 
+                                    text-align: left; 
+                                    width: auto; 
+        
+                                    &:hover {
+                                        svg {
+                                            path {
+                                                fill: black;
+                                            }
+                                        }
+                                    }
+                                }    
+                            }
+        
+                            &:hover {
+                                border: 2px solid #667085;
+                            }
+        
+                            &:active {
+                                border: 3px solid #667085;
+                            }    
+                        }
+                    }
+                }
+
+            }
+        }
+       
+    }
+
+}
+@media(max-width:425px){
+    .postslider{
+        .container{
+            .d-flex{
+                h1{
+                    font-size:36px;
+                    line-height:44px;
+                    
+                }
+                .button-container{
+                    display: none; // Hide button container elements
+                }
+            }
+        }
+        .swiper-container{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .post-slider-box-1{
+                        a{
+                            .card{
+                                .card-body{
+                                    .d-flex-1{
+                                        .wrapper-1{
+                                            .badge{
+                                                font-size:10px;
+                                                margin-right:8px;
+                                            }
+                                        }
+                                        .wrapper-2{
+                                            .label-red{
+                                                font-size:10px; 
+                                            }
+                                            .label-blue{
+                                                font-size:10px; 
+                                            }
+                                            .label-green{
+                                                font-size:10px; 
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-pagination{
+                position:relative;
+                margin-top: 24px;
+            }
+            
+        }
+        
+    }
+
+
+}

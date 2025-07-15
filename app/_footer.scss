@@ -1,0 +1,251 @@
+@import 'variables';
+.footer {
+  background-color: white;
+   
+  .custom-container {
+    background-color: #101828;
+    border-radius: $alert-border-radius;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    margin-bottom: 40px;
+    .container {
+      .d-flex {
+        img {
+          padding-bottom: 48px;
+        }
+      }
+          
+      .row {
+        row-gap: 32px;
+        .time {
+          h6 {
+            padding-left: 0;
+            font-family: 'AptaBold';
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+          }
+
+          // General SVG margin reset except for the social media column
+          svg {
+            margin-right: 0;
+          }
+
+          // Specific rule for the social media column
+          &.social-media-column {
+            svg {
+              margin-right: 16px;
+            }
+          }
+
+          .d-flex {
+            svg {
+              margin-top: 4px; 
+              margin-right: 8px; 
+            }
+          
+            .d-flex {
+              font-size: 18px;
+              align-items: center; 
+          
+              p {
+                font-family: 'AptaRegular';
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 28px;
+              }
+            }
+          }
+        }
+        .address {
+          h6 {
+            padding-left: 0;
+            font-family: 'AptaBold';
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+          }
+
+          // General SVG margin reset except for the social media column
+          svg {
+            margin-right: 0;
+          }
+
+          // Specific rule for the social media column
+          &.social-media-column {
+            svg {
+              margin-right: 16px;
+            }
+          }
+          
+          p {
+            color: white;
+            font-family: 'AptaRegular';
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            padding-left: 0;
+
+          }
+          .icon{
+            margin-right: 16px;
+          }
+        }
+        .contact {
+          h6 {
+            padding-left: 0;
+            font-family: 'AptaBold';
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            color:white;
+          }
+
+          // General SVG margin reset except for the social media column
+          svg {
+            margin-right: 0;
+          }
+
+          // Specific rule for the social media column
+          &.social-media-column {
+            svg {
+              margin-right: 16px;
+            }
+          }
+          
+          p {
+            color: white;
+            font-family: 'AptaRegular';
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            padding-left: 0;
+            span{
+              color:white;
+             
+              a{
+                color:white;
+                text-decoration:none;
+              }
+            }
+
+          }
+          .icon{
+            margin-right: 16px;
+          }
+        }
+        .links {
+          h6 {
+            padding-left: 0;
+            font-family: 'AptaBold';
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+          }
+
+          // General SVG margin reset except for the social media column
+          svg {
+            margin-right: 0;
+          }
+
+          // Specific rule for the social media column
+          &.social-media-column {
+            svg {
+              margin-right: 16px;
+            }
+          }
+          
+          a{
+            text-decoration: none;
+            span {
+              color: white;
+              font-family: 'AptaRegular';
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 28px;
+              padding-left: 0;
+             
+            }
+          }
+          .icon{
+            margin-right: 16px;
+          }
+        }
+        .bank {
+          margin-bottom: 0;
+          h6 {
+            padding-left: 0;
+            font-family: 'AptaBold';
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+          }
+
+          // General SVG margin reset except for the social media column
+          svg {
+            margin-right: 0;
+          }
+
+          // Specific rule for the social media column
+          &.social-media-column {
+            svg {
+              margin-right: 16px;
+            }
+          }
+          
+          p {
+            color: white;
+            font-family: 'AptaRegular';
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            padding-left: 0;
+            
+
+          }
+          .icon{
+            margin-right: 16px;
+          }
+        }
+        .social {
+          h6 {
+            padding-left: 0;
+            font-family: 'AptaBold';
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+          }
+
+          // General SVG margin reset except for the social media column
+          a{
+            svg {
+              margin-right:16px;
+            }
+
+          }
+
+          // Specific rule for the social media column
+          &.social-media-column {
+            svg {
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+    }
+  }      
+}
+.link-underline{
+  background-image: linear-gradient(#BEC3C8,#BEC3C8);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  position: relative; 
+  background-position: 100% 100%;
+  offset: 2px;
+  border-radius:2px;
+  transition:background-size 0.3s ease-in-out;
+  &:hover{
+      background-size:100% 2px;
+      background-position: 0% 100%;
+  }
+}

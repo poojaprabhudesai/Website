@@ -1,0 +1,16 @@
+// Define font paths
+$font-path: '../fonts/';
+
+// Import custom font
+@font-face {
+    font-family: 'MyFont';
+    src: url('#{$font-path}MyFont.woff2') format('woff2'),
+         url('#{$font-path}MyFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Apply font to body and other elements
+body {
+    font-family: 'MyFont', sans-serif;
+}

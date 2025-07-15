@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>two</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="nav container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+            <div class="logo d-flex ">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5171 45.1122C14.258 48.0605 19.2853 49.6955 24.6864 49.723V0.277344H4.02734V31.2982C4.02734 36.9891 6.27138 41.766 10.5171 45.1122Z" fill="#BCBDC0"/>
+                    <path d="M3.75 0V31.2979C3.75 37.0766 6.03064 41.9287 10.3452 45.3294C14.1667 48.3413 19.3088 50 24.8245 50H24.9629V0H3.75ZM24.686 49.7227C19.285 49.6952 14.2576 48.0602 10.5167 45.1118C6.271 41.7656 4.02697 36.9887 4.02697 31.2979V0.276966H24.686V49.7227Z" fill="#1D1D1B"/>
+                    <path d="M45.6219 31.2982V0.277344H24.9629V49.723C30.3641 49.6955 35.3915 48.0605 39.1321 45.1122C43.3779 41.766 45.6219 36.9892 45.6219 31.2982Z" fill="#E5201C"/>
+                    <path d="M14.3562 23.7716L24.6126 0.277344H4.09961L14.3562 23.7716Z" fill="#E5201C"/>
+                    <path d="M35.2927 23.7716L45.5491 0.277344H25.0361L35.2927 23.7716Z" fill="#BCBDC0"/>
+                    <path d="M14.0027 12.1832C13.9769 12.2436 13.9124 12.2777 13.8476 12.2645C13.7833 12.2513 13.7369 12.1946 13.7369 12.1288V9.32084L12.699 3.83643L11.6611 9.32084V16.0168H14.6648V14.513C14.6648 14.1611 15.101 14.0036 15.5334 14.0036C15.9658 14.0036 16.402 14.1611 16.402 14.513V16.0168H17.0531V12.1571L15.5334 8.59696L14.0027 12.1832ZM13.342 11.8709C13.342 11.9473 13.28 12.0094 13.2036 12.0094H12.1943C12.1179 12.0094 12.0558 11.9473 12.0558 11.8709V10.5874C12.0558 10.0771 12.3793 9.81013 12.699 9.81013C13.0186 9.81013 13.342 10.0771 13.342 10.5874V11.8709Z" fill="#BCBDC0"/>
+                    <path d="M17.3185 12.0738L15.6603 8.1892C15.6171 8.08715 15.449 8.08715 15.4057 8.1892L14.0135 11.4509V9.30725C14.0135 9.2986 14.0128 9.29003 14.0112 9.28147L12.8348 3.06533C12.8224 2.99997 12.7652 2.95264 12.6987 2.95264C12.6321 2.95264 12.575 2.99997 12.5625 3.06533L11.3861 9.28147C11.3845 9.29003 11.3838 9.2986 11.3838 9.30725V16.1547C11.3838 16.2311 11.4458 16.2932 11.5223 16.2932H14.8029C14.8794 16.2932 14.9414 16.2311 14.9414 16.1547V14.5124C14.9414 14.3864 15.2124 14.2799 15.533 14.2799C15.8537 14.2799 16.1247 14.3864 16.1247 14.5124V16.1547C16.1247 16.2311 16.1867 16.2932 16.2631 16.2932H17.1912C17.2677 16.2932 17.3297 16.2311 17.3297 16.1547V12.1282C17.3297 12.1096 17.3259 12.0911 17.3185 12.0738ZM17.0528 16.0162H16.4016V14.5124C16.4016 14.1605 15.9654 14.003 15.533 14.003C15.1006 14.003 14.6645 14.1605 14.6645 14.5124V16.0162H11.6608V9.32024L12.6987 3.83583L13.7366 9.32024V12.1282C13.7366 12.194 13.7829 12.2507 13.8473 12.2639C13.912 12.2771 13.9766 12.243 14.0023 12.1826L15.533 8.59636L17.0528 12.1565L17.0528 16.0162Z" fill="#1D1D1B"/>
+                    <path d="M12.6984 9.80957C12.3787 9.80957 12.0552 10.0765 12.0552 10.5868V11.8703C12.0552 11.9468 12.1172 12.0088 12.1937 12.0088H13.2029C13.2793 12.0088 13.3414 11.9468 13.3414 11.8703V10.5868C13.3414 10.0765 13.0179 9.80957 12.6984 9.80957ZM13.0644 11.7318H12.3321V10.5868C12.3321 10.243 12.522 10.0865 12.6984 10.0865C12.7903 10.0865 12.8769 10.1267 12.9416 10.1997C13.022 10.29 13.0644 10.4239 13.0644 10.5868V11.7318Z" fill="#1D1D1B"/>
+                    <path d="M34.9381 12.1831C34.9123 12.2435 34.8476 12.2776 34.783 12.2644C34.7186 12.2512 34.6723 12.1945 34.6723 12.1287V9.32075L33.6346 3.83643L32.5967 9.32075V16.0167H35.6004V14.5129C35.6004 14.161 36.0366 14.0035 36.469 14.0035C36.9014 14.0035 37.3376 14.161 37.3376 14.5129V16.0167H37.9887V12.157L36.469 8.59678L34.9381 12.1831ZM34.2778 11.8708C34.2778 11.9472 34.2157 12.0093 34.1393 12.0093H33.1299C33.0534 12.0093 32.9914 11.9472 32.9914 11.8708V10.5873C32.9914 10.077 33.3149 9.81004 33.6346 9.81004C33.9543 9.81004 34.2778 10.077 34.2778 10.5873V11.8708Z" fill="#E5201C"/>
+                    <path d="M38.2541 12.0738L36.5959 8.1892C36.5526 8.08715 36.3846 8.08715 36.3413 8.1892L34.9489 11.451V9.30725C34.9489 9.2986 34.9482 9.29003 34.9465 9.28147L33.7703 3.06533C33.7579 2.99997 33.7007 2.95264 33.6342 2.95264C33.5677 2.95264 33.5105 2.99997 33.4981 3.06533L32.3217 9.28147C32.3201 9.29003 32.3193 9.2986 32.3193 9.30725V16.1547C32.3193 16.2311 32.3814 16.2932 32.4578 16.2932H35.7385C35.8149 16.2932 35.877 16.2311 35.877 16.1547V14.5124C35.877 14.3864 36.148 14.2799 36.4686 14.2799C36.7892 14.2799 37.0602 14.3864 37.0602 14.5124V16.1547C37.0602 16.2311 37.1222 16.2932 37.1987 16.2932H38.1268C38.2032 16.2932 38.2653 16.2311 38.2653 16.1547V12.1282C38.2653 12.1096 38.2615 12.0911 38.2541 12.0738ZM37.9883 16.0162H37.3372V14.5124C37.3372 14.1605 36.901 14.003 36.4686 14.003C36.0362 14.003 35.6 14.1605 35.6 14.5124V16.0162H32.5963V9.32024L33.6342 3.83592L34.6719 9.32024V12.1282C34.6719 12.194 34.7183 12.2507 34.7826 12.2639C34.8472 12.2771 34.9119 12.243 34.9377 12.1826L36.4686 8.59627L37.9883 12.1565V16.0162Z" fill="#1D1D1B"/>
+                    <path d="M33.6339 9.80957C33.3142 9.80957 32.9907 10.0765 32.9907 10.5868V11.8703C32.9907 11.9468 33.0528 12.0088 33.1292 12.0088H34.1386C34.2151 12.0088 34.2771 11.9468 34.2771 11.8703V10.5868C34.2771 10.0765 33.9536 9.80957 33.6339 9.80957ZM34.0001 11.7318H33.2677V10.5868C33.2677 10.243 33.4576 10.0865 33.6339 10.0865C33.7261 10.0865 33.8124 10.1267 33.8773 10.1997C33.9578 10.2901 34.0001 10.4239 34.0001 10.5868V11.7318Z" fill="#1D1D1B"/>
+                    <path d="M23.3438 32.3653V28.0108L21.3155 18.1646C21.3079 18.1282 21.3153 18.0903 21.336 18.0595C21.3568 18.0287 21.389 18.0074 21.4256 18.0005C21.7268 17.9441 21.9455 17.7683 21.9455 17.5825C21.9455 17.42 21.7848 17.266 21.5363 17.1901C21.4781 17.1723 21.4383 17.1186 21.4383 17.0576V15.8834C21.4383 15.807 21.5003 15.7449 21.5767 15.7449H22.3689V15.4084H21.5767C21.5003 15.4084 21.4383 15.3464 21.4383 15.2699V14.2798H20.9976V15.2699C20.9976 15.3464 20.9355 15.4084 20.8591 15.4084H20.0668V15.7449H20.8591C20.9355 15.7449 20.9976 15.807 20.9976 15.8834V17.0576C20.9976 17.1186 20.9577 17.1723 20.8995 17.1901C20.6508 17.266 20.4901 17.4201 20.4901 17.5825C20.4901 17.7683 20.7089 17.9441 21.01 18.0005C21.0466 18.0074 21.0789 18.0287 21.0996 18.0595C21.1204 18.0903 21.1277 18.1282 21.1202 18.1646L19.0918 28.0107V43.2646H19.9427V41.1334C19.9427 40.4379 20.4938 40.074 21.0381 40.074C21.5825 40.074 22.1336 40.4379 22.1336 41.1334V43.2646H24.6863V32.5038H23.4823C23.4059 32.5038 23.3438 32.4418 23.3438 32.3653ZM21.952 32.3653C21.952 32.4418 21.8899 32.5038 21.8135 32.5038H20.2626C20.1861 32.5038 20.1241 32.4418 20.1241 32.3653V30.181C20.1241 29.5082 20.5839 29.1563 21.038 29.1563C21.4922 29.1563 21.952 29.5082 21.952 30.181L21.952 32.3653Z" fill="#E5201C"/>
+                    <path d="M21.0379 29.1562C20.5838 29.1562 20.124 29.5081 20.124 30.1809V32.3652C20.124 32.4417 20.1861 32.5037 20.2625 32.5037H21.8134C21.8899 32.5037 21.9519 32.4417 21.9519 32.3652V30.1809C21.9519 29.5081 21.4921 29.1562 21.0379 29.1562ZM21.6749 32.2268H20.401V30.1809C20.401 29.6672 20.7311 29.4332 21.0379 29.4332C21.3448 29.4332 21.6749 29.6672 21.6749 30.1809L21.6749 32.2268Z" fill="#1D1D1B"/>
+                    <path d="M24.9629 32.5039V43.2647H31.9923V38.0405L29.1879 32.5039H24.9629ZM27.2313 41.7408H25.4034V39.418C25.4034 38.7452 25.8632 38.3932 26.3172 38.3932C26.7715 38.3932 27.2313 38.7452 27.2313 39.418V41.7408ZM30.1517 39.418V41.7408H28.3238V39.418C28.3238 38.7452 28.7836 38.3932 29.2378 38.3932C29.6919 38.3932 30.1517 38.7452 30.1517 39.418Z" fill="#BCBDC0"/>
+                    <path d="M45.7605 0H24.8245H24.686H3.88851C3.8418 0 3.79817 0.023531 3.77256 0.0626608C3.74714 0.1017 3.74281 0.151105 3.76156 0.193931L14.2296 24.1728C14.2516 24.2232 14.3016 24.2558 14.3566 24.2558C14.4116 24.2558 14.4615 24.2232 14.4835 24.1728L24.686 0.801934V32.2267H23.6205V27.9965C23.6205 27.9871 23.6196 27.9777 23.6176 27.9685L21.6134 18.2395C21.9827 18.1295 22.2222 17.8766 22.2222 17.5823C22.2222 17.3216 22.0263 17.085 21.7149 16.9596V16.0217H22.5071C22.5835 16.0217 22.6456 15.9597 22.6456 15.8833V15.2697C22.6456 15.1933 22.5835 15.1312 22.5071 15.1312H21.7149V14.1411C21.7149 14.0647 21.6529 14.0026 21.5765 14.0026H20.8588C20.7823 14.0026 20.7203 14.0647 20.7203 14.1411V15.1312H19.928C19.8515 15.1312 19.7895 15.1933 19.7895 15.2697V15.8833C19.7895 15.9597 19.8515 16.0217 19.928 16.0217H20.7203V16.9596C20.4089 17.085 20.2129 17.3217 20.2129 17.5823C20.2129 17.8766 20.4524 18.1295 20.8217 18.2395L18.8174 27.9685C18.8155 27.9777 18.8146 27.9871 18.8146 27.9965V43.403C18.8146 43.4794 18.8766 43.5414 18.953 43.5414H20.0809C20.1574 43.5414 20.2194 43.4794 20.2194 43.403V41.1332C20.2194 40.5956 20.6437 40.3508 21.0379 40.3508C21.432 40.3508 21.8563 40.5956 21.8563 41.1332V43.403C21.8563 43.4794 21.9183 43.5414 21.9948 43.5414H24.686V50H24.8245C30.3402 50 35.4823 48.3413 39.3037 45.3294C43.6183 41.9287 45.899 37.0766 45.899 31.2979V0H45.7605ZM14.3566 23.7712L4.10002 0.276966H24.613L14.3566 23.7712ZM45.549 0.276966L35.2926 23.7712L25.036 0.276966H45.549ZM29.188 32.5036L31.9924 38.0403V43.2645H24.963V32.5036H29.188ZM22.1333 43.2645V41.1332C22.1333 40.4377 21.5822 40.0739 21.0378 40.0739C20.4935 40.0739 19.9424 40.4377 19.9424 41.1332V43.2645H19.0915V28.0105L21.1199 18.1644C21.1275 18.128 21.1201 18.0901 21.0993 18.0593C21.0786 18.0285 21.0463 18.0072 21.0097 18.0003C20.7086 17.9439 20.4899 17.7681 20.4899 17.5823C20.4899 17.4199 20.6505 17.2658 20.8992 17.1899C20.9574 17.1722 20.9973 17.1184 20.9973 17.0575V15.8832C20.9973 15.8068 20.9352 15.7448 20.8588 15.7448H20.0665V15.4082H20.8588C20.9352 15.4082 20.9973 15.3462 20.9973 15.2697V14.2796H21.438V15.2697C21.438 15.3462 21.5 15.4082 21.5765 15.4082H22.3686V15.7448H21.5765C21.5 15.7448 21.438 15.8068 21.438 15.8832V17.0575C21.438 17.1184 21.4778 17.1721 21.5361 17.1899C21.7845 17.2658 21.9452 17.4198 21.9452 17.5823C21.9452 17.7681 21.7265 17.9439 21.4253 18.0003C21.3887 18.0072 21.3565 18.0285 21.3357 18.0593C21.315 18.0901 21.3076 18.128 21.3152 18.1644L23.3436 28.0106V32.3652C23.3436 32.4416 23.4056 32.5036 23.482 32.5036H24.686V43.2645H22.1333ZM45.622 31.2979C45.622 36.9888 43.378 41.7656 39.1322 45.1118C35.3916 48.0602 30.3642 49.6952 24.963 49.7227V43.5414H32.2694V37.9741L29.3582 32.2267H24.963V0.801934L35.1656 24.1728C35.1876 24.2232 35.2376 24.2558 35.2926 24.2558C35.3476 24.2558 35.3975 24.2232 35.4195 24.1728L45.622 0.801945V31.2979Z" fill="#1D1D1B"/>
+                    <path d="M29.2382 38.3936C28.784 38.3936 28.3242 38.7455 28.3242 39.4183V41.7411H30.1521V39.4183C30.1521 38.7455 29.6923 38.3936 29.2382 38.3936ZM29.8751 41.4642H28.6012V39.4183C28.6012 38.9045 28.9313 38.6705 29.2382 38.6705C29.545 38.6705 29.8751 38.9045 29.8751 39.4183L29.8751 41.4642Z" fill="#1D1D1B"/>
+                    <path d="M26.3172 38.3936C25.8631 38.3936 25.4033 38.7455 25.4033 39.4183V41.7411H27.2312V39.4183C27.2312 38.7455 26.7714 38.3936 26.3172 38.3936ZM26.9542 41.4642H25.6803V39.4183C25.6803 38.9045 26.0104 38.6705 26.3172 38.6705C26.6241 38.6705 26.9542 38.9045 26.9542 39.4183V41.4642Z" fill="#1D1D1B"/>
+                    </svg>
+                    <h3>Gemeinde Sölden</h3>
+            </div>
+            <div class="navbar-controls d-flex">
+                <button class="navbar-toggler-search" type="button" data-toggle="collapse" data-target="#navbarContent">
+                    <!-- Replace with your actual toggler icon SVG -->
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="9.75" cy="10.5" r="7.8" stroke="#101828" stroke-width="2.4"/>
+                        <path d="M15.75 16.5L20.25 21" stroke="#101828" stroke-width="2.4" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.66675 16H29.3334" stroke="#101828" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.66675 8H29.3334" stroke="#101828" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.66675 24H29.3334" stroke="#101828" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Aktuelles
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.61972 14.3686L3.09946 7.16126C2.91572 6.95816 2.8125 6.6827 2.8125 6.39548C2.8125 6.10825 2.91572 5.83279 3.09946 5.6297C3.2832 5.4266 3.53239 5.3125 3.79224 5.3125C4.05208 5.3125 4.30128 5.4266 4.48501 5.6297L10.3117 12.0722L16.14 5.6315C16.231 5.53094 16.339 5.45116 16.4578 5.39674C16.5767 5.34231 16.7041 5.3143 16.8328 5.3143C16.9614 5.3143 17.0888 5.34231 17.2077 5.39674C17.3266 5.45116 17.4346 5.53094 17.5255 5.6315C17.6165 5.73206 17.6887 5.85145 17.7379 5.98284C17.7872 6.11424 17.8125 6.25506 17.8125 6.39728C17.8125 6.5395 17.7872 6.68033 17.7379 6.81172C17.6887 6.94311 17.6165 7.0625 17.5255 7.16306L11.0053 14.3704C10.9143 14.4711 10.8063 14.5509 10.6873 14.6053C10.5684 14.6597 10.4409 14.6877 10.3122 14.6875C10.1834 14.6873 10.056 14.6591 9.93719 14.6044C9.81836 14.5496 9.71048 14.4695 9.61972 14.3686Z" fill="#101828"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#"><span class="link-underline">Formulare</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Tarife und Abgaben</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Kundmachungen & Verordnungen</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Förderungen und Zuschüsse</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Hundehaltung</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Parkraum</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Trinkwasser</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Amtssignatur</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Wahlergebnisse</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Abfallwirtschaft</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Abwasserreinigung</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Bauhof</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Forst</span></a>
+                            <a class="dropdown-item" href="#"><span class="link-underline">Ortspflege</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link link-underline" href="#">Gemeinde A–Z</a>
+                    </li>
+                    <li class="nav-item active ">
+                        <a class="nav-link link-underline" href="#">Gemeindeamt</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link link-underline" href="#">Politik</a>
+                    </li>
+                    <li class="search-logo">
+                        <a class="nav-link" href=#>
+                            <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9.75" cy="10.5" r="7.8" stroke="#101828" stroke-width="2.4"/>
+                                <path d="M15.75 16.5L20.25 21" stroke="#101828" stroke-width="2.4" stroke-linecap="round"/>
+                            </svg>
+                        </a>  
+                    </li>
+                    <li class="btn-item">
+                        <button class="btn rounded-pill" type="button">
+                            Kontakt 
+                            <span class="ml-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.3988 10.5516C17.332 10.7268 17.2341 10.8859 17.1108 11.0198L12.7018 15.8271C12.4532 16.0979 12.1161 16.25 11.7645 16.25C11.4129 16.25 11.0757 16.0979 10.8271 15.8271C10.5785 15.5563 10.4388 15.189 10.4388 14.806C10.4388 14.4231 10.5785 14.0558 10.8271 13.785L12.9764 11.4415L3.82334 11.4415C3.47237 11.4415 3.13577 11.2896 2.8876 11.0193C2.63942 10.7489 2.5 10.3823 2.5 10C2.5 9.6177 2.63942 9.25106 2.8876 8.98074C3.13577 8.71041 3.47237 8.55855 3.82334 8.55855L12.9764 8.55855L10.8249 6.21498C10.5763 5.94419 10.4366 5.57691 10.4366 5.19395C10.4366 4.81099 10.5763 4.44372 10.8249 4.17292C11.0735 3.90213 11.4107 3.75 11.7623 3.75C12.1139 3.75 12.451 3.90213 12.6996 4.17292L17.1108 8.97777C17.2341 9.11169 17.332 9.27081 17.3988 9.44602C17.4656 9.62123 17.5 9.80908 17.5 9.9988C17.5 10.1885 17.4656 10.3764 17.3988 10.5516Z" fill="#101828"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </li>   
+                </ul>
+            </div>
+        
+        </nav>
+    </div>
+    <!--Hero Input-->
+
+    <div class="heroinput2 container-fluid rounded">
+        <div class="custom-container">
+            <div class="layer container">
+                <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item "><a href="#" class="link-underline">Layer 1</a></li>
+                    <li class="breadcrumb-item"><span class="separator">></span><a href="#" class="link-underline">Layer 2</a></li>
+                    <li class="breadcrumb-item"><span class="separator">></span><a href="#" class="link-underline">Layer 3</a></li>
+                    <li class="breadcrumb-item"><span class="separator">></span><a href="#" class="link-underline">Layer 4</a></li>
+                    <li class="breadcrumb-item"><span class="separator">></span><a href="#" class="link-underline">Layer 5</a></li>
+                </ol>
+            </div>
+            <h1 class="container">Gemeinde A–Z</h1>
+            <p class="container">Hier finden Sie aktuelle Aushänge, Verlautbarungen und Informationen.</p>
+            <div class="search-box container">
+                <div class="hero-search-box ">
+                    <div class="wrapper d-flex justify-content-between align-items-center">
+                        <div class="input-item">
+                            <div class="field-wrapper">
+                                <input aria-label="Wie können wir Ihnen helfen?" class="input-field is-empty txt-display-xs" id="home-search-input" type="text" url="">
+                                <p class="placeholder txt-display-xs">Wie können wir Ihnen helfen?</p>
+                            </div>
+                        </div>
+                        <svg class="icon-default" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="13" cy="14" r="10" stroke="#101828" stroke-width="4"/>
+                            <path d="M21 22L27 28" stroke="#101828" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>  
+                </div> 
+
+            </div>
+            
+        </div>
+    </div>
+    <!--rows-->
+    <div class="text-link container">
+        <div class="text-link-row">
+            <h6>A</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>B</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>C</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>E</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+                <div class="col-md-4">  
+                    <div class="flex-row">
+                       <h3><a href="" class="link-underline">Text Link</a></h3>
+                       <p class="m-0">Beschreibung Service </p>
+                   </div>
+               </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>F</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>G</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>H</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>K</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>L</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>M</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>O</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>P</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+                <div class="col-md-4">  
+                    <div class="flex-row">
+                       <h3><a href="" class="link-underline">Text Link</a></h3>
+                       <p class="m-0">Beschreibung Service </p>
+                   </div>
+               </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>R</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-link-row">
+            <h6>S</h6>
+            <div class="row">
+                <div class="col-md-4">  
+                     <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+                <div class="col-md-4">  
+                    <div class="flex-row">
+                       <h3><a href="" class="link-underline">Text Link</a></h3>
+                       <p class="m-0">Beschreibung Service </p>
+                   </div>
+               </div>
+               <div class="col-md-4">  
+                    <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+                <div class="col-md-4">  
+                    <div class="flex-row">
+                        <h3><a href="" class="link-underline">Text Link</a></h3>
+                        <p class="m-0">Beschreibung Service </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-link-row">
+                <h6>V</h6>
+                <div class="row">
+                    <div class="col-md-4">  
+                         <div class="flex-row">
+                            <h3><a href="" class="link-underline">Text Link</a></h3>
+                            <p class="m-0">Beschreibung Service </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-link-row">
+                <h6>W</h6>
+                <div class="row">
+                    <div class="col-md-4">  
+                         <div class="flex-row">
+                            <h3><a href="" class="link-underline">Text Link</a></h3>
+                            <p class="m-0">Beschreibung Service </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-link-row">
+                <h6>Z</h6>
+                <div class="row">
+                    <div class="col-md-4">  
+                         <div class="flex-row">
+                            <h3><a href="" class="link-underline">Text Link</a></h3>
+                            <p class="m-0">Beschreibung Service </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+     <!--newsletter-->
+     <div class="newsletter container-fluid rounded">
+        <div class="custom-container">
+            <div class="container">
+                <div class="wrapper container">
+                    <h3>Möchten Sie auf dem Laufenden bleiben? Abonniere unseren Newsletter!</h3>
+                </div>
+                <div class="container">
+                    <div class="wrapper-3 d-flex">
+                        <div class="form-group">
+                            <label for="text">Name*</label><br>
+                            <input type="text" class="form-control" id="text" placeholder="Name eingeben">
+                        </div>
+                        <div class="form-group">   
+                            <label for="email">E-Mail-Adresse*</label><br>
+                            <input type="email" class="form-control" id="email" placeholder="name@mail.com">
+                        </div>
+                    </div>
+                    <div class="wrapper-4 d-flex">
+                        <div class="form-group d-flex align-items-center">
+                            <input type="checkbox" class="custom-checkbox" id="customCheckbox">
+                            <label class="form-check-label" for="customCheckbox">
+                                Ich habe die Datenschutzbestimmungen gelesen und bin damit einverstanden.
+                            </label>
+                        </div>
+                        <button class="btn rounded-pill ms-auto" type="button">
+                            Jetzt anmelden
+                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.8988 7.55157C14.832 7.72679 14.7341 7.88591 14.6108 8.01983L10.2018 12.8271C9.95324 13.0979 9.61606 13.25 9.26448 13.25C8.9129 13.25 8.57572 13.0979 8.32712 12.8271C8.07851 12.5563 7.93885 12.189 7.93885 11.806C7.93885 11.4231 8.07851 11.0558 8.32712 10.785L10.4764 8.44145L1.32334 8.44145C0.972368 8.44145 0.635772 8.28959 0.387597 8.01926C0.139423 7.74894 -2.56485e-07 7.3823 -2.73196e-07 7C-2.89907e-07 6.6177 0.139423 6.25106 0.387597 5.98074C0.635771 5.71041 0.972368 5.55855 1.32334 5.55855L10.4764 5.55855L8.32491 3.21498C8.07631 2.94419 7.93664 2.57691 7.93664 2.19395C7.93664 1.81099 8.07631 1.44372 8.32491 1.17292C8.57352 0.902131 8.9107 0.750001 9.26228 0.750001C9.61386 0.750001 9.95104 0.902131 10.1996 1.17292L14.6108 5.97777C14.7341 6.11169 14.832 6.27081 14.8988 6.44602C14.9656 6.62123 15 6.80908 15 6.9988C15 7.18851 14.9656 7.37636 14.8988 7.55157Z" fill="#101828"/>
+                            </svg>    
+                        </button>
+                    </div>  
+                </div>
+            </div> 
+        </div>   
+    </div>
+    
+    <!--Footer-->
+    <div class="footer container-fluid rounded text-white">
+        <div class="custom-container">
+            <div class="container">
+                <div class="d-flex align-items-right">
+                   <img src="images/Frame 319.png" class="d-inline-block align-top" alt="Logo">
+               </div>
+               <div class="row">
+                    <div class="time col-md-3 ">
+                        <h6>Gemeinde Öffnungszeiten</h6>
+                        <div class="d-flex align-items-start">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5625 10C1.5625 11.6688 2.05735 13.3001 2.98447 14.6876C3.9116 16.0752 5.22936 17.1566 6.77111 17.7952C8.31286 18.4338 10.0094 18.6009 11.6461 18.2754C13.2828 17.9498 14.7862 17.1462 15.9662 15.9662C17.1462 14.7862 17.9498 13.2828 18.2754 11.6461C18.6009 10.0094 18.4338 8.31286 17.7952 6.77111C17.1566 5.22935 16.0752 3.91159 14.6876 2.98447C13.3001 2.05735 11.6688 1.5625 10 1.5625C7.763 1.56498 5.61833 2.45472 4.03653 4.03652C2.45473 5.61832 1.56498 7.76299 1.5625 10ZM16.5625 10C16.5625 11.2979 16.1776 12.5667 15.4565 13.6459C14.7354 14.7251 13.7105 15.5663 12.5114 16.063C11.3122 16.5597 9.99272 16.6896 8.71972 16.4364C7.44672 16.1832 6.27739 15.5582 5.35961 14.6404C4.44183 13.7226 3.81681 12.5533 3.5636 11.2803C3.31038 10.0073 3.44034 8.68778 3.93704 7.48864C4.43374 6.2895 5.27487 5.26457 6.35407 4.54348C7.43327 3.82238 8.70206 3.4375 10 3.4375C11.7399 3.43936 13.408 4.13136 14.6383 5.36166C15.8686 6.59197 16.5606 8.26008 16.5625 10ZM10 4.6875C10.2486 4.6875 10.4871 4.78627 10.6629 4.96208C10.8387 5.1379 10.9375 5.37636 10.9375 5.625L10.9375 10C10.9375 10.2486 10.8387 10.4871 10.6629 10.6629C10.4871 10.8387 10.2486 10.9375 10 10.9375L5.625 10.9375C5.37636 10.9375 5.1379 10.8387 4.96209 10.6629C4.78627 10.4871 4.6875 10.2486 4.6875 10C4.6875 9.75136 4.78627 9.5129 4.96209 9.33708C5.1379 9.16127 5.37636 9.0625 5.625 9.0625L9.0625 9.0625L9.0625 5.625C9.0625 5.37636 9.16127 5.1379 9.33709 4.96208C9.5129 4.78627 9.75136 4.6875 10 4.6875Z" fill="white"/>
+                            </svg>
+                            <div class="d-flex flex-column align-items-start ">
+                                <p>Mo-Fr:</p>
+                                <p>Mo:</p>    
+                                <p>Di, Do:</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-start ml-3 ">
+                                <p>08:30-12:00 Uhr</p>
+                                <p>14:00-18:00 Uhr</p> 
+                                <p>14:00-16:00 Uhr</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address col-md-3">
+                        <h6>Address</h6>
+                        <p> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M14.7691 3.74067C13.5448 2.51632 11.9123 1.875 10.2215 1.875C8.47248 1.875 6.89832 2.57463 5.67397 3.74067C4.44963 4.96502 3.75 6.53918 3.75 8.28825C3.75 9.10448 3.98321 10.0956 4.50793 11.2034C4.97435 12.1945 5.55737 13.1856 6.257 14.1768C6.95662 15.1096 7.65625 15.9258 8.35588 16.5089C8.70569 16.8004 9.0555 17.0336 9.34702 17.2085C9.69683 17.3834 9.98834 17.5 10.2215 17.5C10.4548 17.5 10.7463 17.3834 11.0961 17.2085C11.3876 17.0336 11.7374 16.8004 12.0872 16.5089C12.7868 15.9258 13.4865 15.0513 14.1861 14.1768C14.8857 13.1856 15.5271 12.1362 15.9352 11.2034C16.4599 10.0956 16.6931 9.10448 16.6931 8.28825C16.6931 6.53918 15.9935 4.96502 14.8274 3.74067H14.7691ZM10.2799 15.8092C10.2799 15.8092 10.2799 15.8092 10.2215 15.8092C10.1632 15.8092 10.1049 15.6926 9.98834 15.6343C9.81343 15.5177 9.58022 15.2845 9.34702 15.0513C8.8223 14.5266 8.23927 13.827 7.65625 13.069C7.01493 12.2528 6.49021 11.3783 6.14039 10.6203C5.73228 9.7458 5.49907 8.92957 5.49907 8.28825C5.49907 7.0056 5.96549 5.83955 6.89832 4.96502C7.77285 4.09049 8.9972 3.56577 10.2215 3.56577C11.4459 3.56577 12.6702 4.03218 13.5448 4.96502C14.4193 5.89785 14.944 7.0639 14.944 8.28825C14.944 9.51259 14.7108 9.6875 14.3027 10.6203C13.9529 11.3783 13.4282 12.2528 12.7868 13.069C12.2621 13.7687 11.6791 14.4683 11.1544 15.0513C10.9212 15.2845 10.688 15.5177 10.5131 15.6343C10.4548 15.6926 10.3382 15.7509 10.2799 15.8092Z" fill="white"/>
+                               <path d="M13.3699 10.3288C13.778 9.68751 14.0112 8.98789 14.0112 8.22996C14.0112 7.23882 13.6031 6.24768 12.9035 5.54806C12.2039 4.84843 11.271 4.44031 10.2216 4.44031C9.46367 4.44031 8.76405 4.67352 8.12272 5.08164C7.4814 5.48975 7.01498 6.07278 6.72347 6.7724C6.43196 7.47203 6.37365 8.22996 6.49026 8.92959C6.66516 9.68751 7.01498 10.3288 7.5397 10.8536C8.06442 11.3783 8.76405 11.7281 9.46367 11.903C9.69688 11.903 9.93009 11.9613 10.2216 11.9613C10.7463 11.9613 11.2127 11.8447 11.6792 11.6698C12.3788 11.3783 12.9618 10.9119 13.3699 10.2705V10.3288ZM9.81349 6.18938C9.93009 6.18938 10.105 6.18938 10.2216 6.18938C10.5131 6.18938 10.7463 6.18938 10.9795 6.36429C11.3293 6.53919 11.6792 6.7724 11.9124 7.12222C12.1456 7.47203 12.2622 7.88015 12.2622 8.28826C12.2622 8.81298 12.029 9.3377 11.6792 9.74582C11.3293 10.1539 10.7463 10.3288 10.2216 10.3288C9.81349 10.3288 9.40537 10.2122 9.05556 9.97903C8.70574 9.74582 8.47253 9.45431 8.29763 9.04619C8.12272 8.69638 8.12272 8.22996 8.18102 7.88015C8.23933 7.53033 8.47253 7.12222 8.76405 6.83071C9.05556 6.53919 9.40537 6.36429 9.81349 6.24768V6.18938Z" fill="white"/>
+                            </svg>Gemeinde Sölden</p>
+                        <p>Gemeindestraße 1</p>
+                        <p>6450 Sölden</p>
+                    </div>
+                    <div class=" contact col-md-3 ">
+                        <h6>Kontakt</h6>
+                        <p>
+                            <span class="link-underline">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 3.4375H2.5C2.25136 3.4375 2.0129 3.53627 1.83709 3.71209C1.66127 3.8879 1.5625 4.12636 1.5625 4.375V15C1.5625 15.4144 1.72712 15.8118 2.02015 16.1049C2.31317 16.3979 2.7106 16.5625 3.125 16.5625H16.875C17.2894 16.5625 17.6868 16.3979 17.9799 16.1049C18.2729 15.8118 18.4375 15.4144 18.4375 15V4.375C18.4375 4.12636 18.3387 3.8879 18.1629 3.71209C17.9871 3.53627 17.7486 3.4375 17.5 3.4375ZM15.0898 5.3125L10 9.97813L4.91016 5.3125H15.0898ZM3.4375 14.6875V6.50625L9.36641 11.9414C9.53932 12.1 9.7654 12.1879 10 12.1879C10.2346 12.1879 10.4607 12.1 10.6336 11.9414L16.5625 6.50625V14.6875H3.4375Z" fill="white"/>
+                                </svg>
+                                <a href="" >gemeinde@soelden.gv.at</a>
+                            </span>
+                        </p>
+                        <p>
+                            <span class="link-underline">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 12.0934L13.8211 10.4442L13.807 10.4379C13.5679 10.3348 13.3067 10.2933 13.0474 10.3172C12.7881 10.3411 12.5389 10.4296 12.3227 10.5747C12.2923 10.595 12.2631 10.6169 12.2352 10.6403L10.4922 12.1247C9.47657 11.5739 8.42735 10.5333 7.87579 9.53013L9.36485 7.75981C9.38879 7.73124 9.41096 7.70124 9.43126 7.66997C9.57249 7.45447 9.65824 7.20738 9.68087 6.95071C9.70349 6.69405 9.6623 6.43577 9.56094 6.19888C9.55854 6.19434 9.55645 6.18964 9.55469 6.18481L7.90626 2.49966C7.77094 2.19147 7.54001 1.93504 7.24763 1.7683C6.95525 1.60157 6.61696 1.5334 6.28282 1.57388C5.14873 1.72285 4.10765 2.27956 3.35402 3.14001C2.60039 4.00047 2.18573 5.10583 2.18751 6.24966C2.18751 12.6254 7.37422 17.8122 13.75 17.8122C14.8938 17.8139 15.9992 17.3993 16.8597 16.6456C17.7201 15.892 18.2768 14.8509 18.4258 13.7168C18.4663 13.3827 18.3981 13.0444 18.2314 12.752C18.0646 12.4597 17.8082 12.2287 17.5 12.0934ZM13.75 15.9372C11.1817 15.9341 8.71942 14.9124 6.90333 13.0963C5.08725 11.2802 4.06561 8.81799 4.06251 6.24966C4.06072 5.60239 4.28046 4.97399 4.68522 4.46889C5.08999 3.96379 5.6554 3.61239 6.28751 3.47309L7.75782 6.75434L6.26094 8.53716C6.23675 8.56599 6.21431 8.59625 6.19376 8.62778C6.04622 8.85321 5.95947 9.11297 5.94195 9.38182C5.92443 9.65067 5.97672 9.91948 6.09376 10.1622C6.82969 11.6684 8.3461 13.1747 9.86797 13.9122C10.1123 14.028 10.3824 14.0784 10.6521 14.0586C10.9217 14.0387 11.1816 13.9492 11.4063 13.7989C11.4365 13.7785 11.4654 13.7563 11.493 13.7325L13.2453 12.2426L16.5266 13.7122C16.3873 14.3443 16.0359 14.9097 15.5308 15.3144C15.0257 15.7192 14.3973 15.9389 13.75 15.9372Z" fill="white"/>
+                                 </svg><a href="">  +43 5254 22 25</a>
+                            </span>
+                        </p>
+                        <p>
+                            <span class="link-underline">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M11.3657 13.2158C11.2558 13.4906 11.3107 13.7837 11.5122 13.9852C11.6404 14.1134 11.8236 14.205 12.0251 14.205C12.2266 14.205 12.2083 14.205 12.2999 14.15C12.5746 14.0401 12.7395 13.7837 12.7395 13.4906C12.7395 13.3074 12.6662 13.1243 12.538 12.996C12.4098 12.8678 12.2266 12.7945 12.0434 12.7945C11.7687 12.7945 11.5122 12.9594 11.384 13.2342L11.3657 13.2158Z" fill="white"/>
+                                   <path d="M9.84542 14.205C9.55233 14.205 9.3142 14.3699 9.18598 14.6446C9.07607 14.9011 9.13103 15.2125 9.33252 15.414C9.46074 15.5422 9.64392 15.6338 9.84542 15.6338C10.0469 15.6338 10.0286 15.6338 10.1202 15.5788C10.3949 15.4689 10.5598 15.2125 10.5598 14.9194C10.5598 14.7362 10.4865 14.5531 10.3583 14.4248C10.2301 14.2966 10.0469 14.2233 9.86373 14.2233L9.84542 14.205Z" fill="white"/>
+                                   <path d="M16.0551 7.92204H15.7071V4.64317C15.7071 3.47084 14.7545 2.51832 13.5822 2.5H10.5232C9.35082 2.5 8.37998 3.45252 8.37998 4.64317V7.92204H7.33587C7.33587 7.37251 7.09774 6.84129 6.71307 6.45662C6.31008 6.05363 5.77887 5.83382 5.1927 5.83382H4.64317C3.47084 5.83382 2.5 6.78634 2.5 7.97699V13.4723C2.5 14.0585 2.75645 14.608 3.17775 15.011V15.5605C3.17775 16.7329 4.13028 17.6854 5.30261 17.7037H15.9818C17.1542 17.7037 18.125 16.7512 18.125 15.5605V10.0652C18.125 8.9112 17.1725 7.95867 16.0185 7.94036L16.0551 7.92204ZM9.79044 4.64317C9.79044 4.45999 9.86372 4.27682 9.99194 4.14859C10.1202 4.02037 10.3033 3.9471 10.4865 3.9471H13.5456C13.7288 3.9471 13.9119 4.02037 14.0402 4.14859C14.1684 4.27682 14.2416 4.45999 14.2416 4.64317V7.92204H9.80876L9.77213 4.64317H9.79044ZM5.90709 13.4723C5.90709 13.857 5.59569 14.1867 5.1927 14.1867H4.64317C4.2585 14.1867 3.9471 13.857 3.9471 13.4723V7.97699C3.9471 7.59232 4.2585 7.28092 4.64317 7.28092H5.1927C5.37588 7.28092 5.55906 7.35419 5.68728 7.48241C5.8155 7.61064 5.88877 7.79382 5.88877 7.97699V13.4723H5.90709ZM4.66149 15.6338H5.1927C5.76055 15.6338 6.31008 15.3957 6.71307 14.9927C7.11606 14.5897 7.33587 14.0402 7.33587 13.4723V9.36914H15.9818C16.3665 9.36914 16.6779 9.68054 16.6779 10.0652V15.6155C16.6779 15.7987 16.6229 15.9818 16.4764 16.1101C16.3482 16.2383 16.165 16.3115 15.9818 16.3115H5.30261C5.11943 16.3115 4.93625 16.2383 4.80803 16.1101C4.67981 15.9818 4.60654 15.817 4.60654 15.6338C4.62485 15.6338 4.64317 15.6338 4.66149 15.6338Z" fill="white"/>
+                                   <path d="M9.84542 14.205C9.937 14.205 10.0285 14.205 10.1201 14.15C10.3949 14.0401 10.5597 13.7837 10.5597 13.4906C10.5597 13.3074 10.4865 13.1243 10.3582 12.996C10.23 12.8678 10.0468 12.7945 9.86366 12.7945C9.57058 12.7945 9.33245 12.9594 9.20423 13.2342C9.09432 13.4906 9.14927 13.802 9.35077 14.0035C9.47899 14.1317 9.66224 14.2233 9.86373 14.2233L9.84542 14.205Z" fill="white"/>
+                                   <path d="M12.0435 14.205C11.7688 14.205 11.5123 14.3699 11.3841 14.6446C11.2742 14.9194 11.3292 15.2125 11.5306 15.414C11.6589 15.5422 11.842 15.6338 12.0435 15.6338C12.245 15.6338 12.2267 15.6338 12.3183 15.5788C12.5931 15.4689 12.7579 15.2125 12.7579 14.9194C12.7579 14.7362 12.6847 14.5531 12.5564 14.4248C12.4282 14.2966 12.245 14.2233 12.0619 14.2233L12.0435 14.205Z" fill="white"/>
+                                   <path d="M10.3216 12.4465H13.6737C14.0034 12.4465 14.3148 12.3183 14.5347 12.0985C14.7728 11.8603 14.901 11.5673 14.901 11.2375C14.901 10.9078 14.7728 10.5781 14.5347 10.3583C14.2965 10.1385 14.0034 10.0103 13.6737 10.0103C13.344 10.0103 13.6554 10.0103 13.6371 10.0103H10.3216C9.69879 10.0652 9.20421 10.5964 9.20421 11.2375C9.20421 11.8787 9.69879 12.4099 10.3216 12.4648V12.4465Z" fill="white"/>
+                                   <path d="M14.2232 12.7945C13.9302 12.7945 13.6737 12.9594 13.5638 13.2342C13.4539 13.4906 13.5089 13.802 13.7103 14.0035C13.8386 14.1317 14.0217 14.2233 14.2232 14.2233C14.4247 14.2233 14.4064 14.2233 14.498 14.1684C14.7728 14.0585 14.9376 13.802 14.9376 13.5089C14.9376 13.2158 14.6262 12.8129 14.2416 12.7945H14.2232Z" fill="white"/>
+                                   <path d="M14.2232 14.205C13.9302 14.205 13.6737 14.3699 13.5638 14.6446C13.4539 14.9011 13.5089 15.2125 13.7103 15.414C13.8386 15.5422 14.0217 15.6338 14.2232 15.6338C14.4247 15.6338 14.4064 15.6338 14.498 15.5788C14.7728 15.4689 14.9376 15.2125 14.9376 14.9194C14.9376 14.6263 14.6262 14.2233 14.2416 14.205H14.2232Z" fill="white"/>
+                                </svg> <a href=""> +43 5254 22 25 18</a>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="links col-md-3 ">
+                        <h6>Rechtliches</h6>
+                        <p><a href=""><span class="link-underline">Impressum</span></a></p>
+                        <p> <a href=""><span class="link-underline"> Datenschutzerklärung</span> </a></p>
+                        <p><a href=""><span class="link-underline">Barrierefreiheit</span></a></p>
+                   </div>
+                    <div class="bank col-md-3 ">
+                        <h6>Bankdaten</h6>
+                        <p>Raiffeisenbank Sölden</p>
+                        <p>IBAN: AT77 3632 4000 0027 0017</p>
+                        <p>BIC: RZTIAT 22324</p> 
+                        <p>ATU 37708003</p>
+                    </div>
+                    <div class=" social col-md-3 ">
+                        <h6>Social Media</h6>
+                        <a href="">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2_5371)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C18.6274 0 24 5.37258 24 12C24 17.9895 19.6118 22.954 13.875 23.8542V15.4688H16.6711V15.4687L17.2031 12.0001V12H13.875V9.74912C13.875 8.80014 14.34 7.87506 15.8306 7.87506H17.3437V7.875V4.92194V4.92187C17.3437 4.92187 15.9705 4.6875 14.6576 4.6875C12.0879 4.6875 10.3527 6.14758 10.1458 8.8082C10.132 8.98557 10.125 9.16828 10.125 9.35625V12H7.07812V15.4687L7.07812 15.4688H10.125L10.125 23.8542C4.3882 22.954 0 17.9895 0 12C0 5.37258 5.37258 0 12 0Z" fill="#FFFEFD"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2_5371">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg> 
+                        </a>
+                        <a href="">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.05242 0.0718667C8.3323 0.0137476 8.741 0 12 0C15.259 0 15.6676 0.0137476 16.9475 0.0718667C18.2248 0.129844 19.0971 0.331743 19.8605 0.626985C20.6496 0.932133 21.3188 1.34048 21.9859 2.0044C22.6531 2.66836 23.0633 3.33436 23.37 4.11963C23.6667 4.8793 23.8695 5.74739 23.9278 7.01857C23.9862 8.29235 24 8.69904 24 11.9424C24 15.1858 23.9862 15.5925 23.9278 16.8662C23.8695 18.1374 23.6667 19.0055 23.37 19.7651C23.0633 20.5505 22.6531 21.2165 21.9859 21.8804C21.3188 22.5443 20.6496 22.9526 19.8605 23.2579C19.0971 23.5531 18.2248 23.755 16.9475 23.813C15.6676 23.8711 15.259 23.8848 12 23.8848C8.741 23.8848 8.3323 23.8711 7.05242 23.813C5.77511 23.755 4.90283 23.5531 4.1395 23.2579C3.35044 22.9526 2.68118 22.5443 2.01406 21.8804C1.3469 21.2165 0.936629 20.5504 0.629961 19.7651C0.333296 19.0055 0.13047 18.1374 0.0721656 16.8662C0.0137662 15.5925 0 15.1858 0 11.9424C0 8.699 0.0137662 8.29235 0.0721656 7.01857C0.13047 5.74739 0.333296 4.8793 0.629961 4.11963C0.936629 3.33436 1.3469 2.66836 2.01406 2.0044C2.68118 1.34048 3.35044 0.932133 4.1395 0.626985C4.90283 0.331743 5.77511 0.129844 7.05242 0.0718667ZM16.8474 2.22037C15.582 2.16291 15.2025 2.15078 11.9984 2.15078C8.79423 2.15078 8.41473 2.16291 7.14933 2.22037C5.97939 2.27351 5.34395 2.46806 4.9211 2.63161C4.36102 2.84825 3.96123 3.10704 3.54134 3.52497C3.12144 3.94284 2.86136 4.34067 2.64367 4.89811C2.47938 5.31893 2.28389 5.95127 2.23049 7.11564C2.17276 8.37492 2.16057 8.75265 2.16057 11.9414C2.16057 15.1302 2.17276 15.5079 2.23049 16.7672C2.28389 17.9315 2.47938 18.5639 2.64367 18.9847C2.86136 19.5421 3.12144 19.94 3.54134 20.3578C3.96123 20.7758 4.36102 21.0346 4.9211 21.2512C5.34395 21.4147 5.97939 21.6093 7.14938 21.6624C8.41454 21.7198 8.79399 21.732 11.9984 21.732C15.2028 21.732 15.5822 21.7198 16.8474 21.6624C18.0174 21.6093 18.6528 21.4147 19.0756 21.2512C19.6357 21.0346 20.0355 20.7758 20.4554 20.3578C20.8753 19.94 21.1354 19.5421 21.3531 18.9847C21.5174 18.5639 21.7129 17.9315 21.7663 16.7671C21.824 15.5079 21.8362 15.1302 21.8362 11.9414C21.8362 8.75265 21.824 8.37492 21.7663 7.11564C21.7129 5.95127 21.5174 5.31893 21.3531 4.89811C21.1354 4.34067 20.8753 3.94284 20.4554 3.52492C20.0355 3.10704 19.6357 2.84825 19.0756 2.63161C18.6528 2.46806 18.0174 2.27351 16.8474 2.22037ZM19.8432 5.56315C19.8432 6.35464 19.1987 6.99622 18.4037 6.99622C17.6086 6.99622 16.9641 6.35464 16.9641 5.56315C16.9641 4.77167 17.6086 4.13009 18.4037 4.13009C19.1987 4.13009 19.8432 4.77167 19.8432 5.56315ZM11.9978 15.9216C9.78865 15.9216 7.99775 14.1393 7.99775 11.9408C7.99775 9.74229 9.78865 7.96003 11.9978 7.96003C14.2069 7.96003 15.9978 9.74229 15.9978 11.9408C15.9978 14.1393 14.2069 15.9216 11.9978 15.9216ZM11.9994 5.80926C8.59609 5.80926 5.83717 8.55489 5.83717 11.9418C5.83717 15.3288 8.59609 18.0744 11.9994 18.0744C15.4026 18.0744 18.1615 15.3288 18.1615 11.9418C18.1615 8.55489 15.4026 5.80926 11.9994 5.80926Z" fill="#FFFEFD"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- Bootstrap JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

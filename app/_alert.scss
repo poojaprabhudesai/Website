@@ -1,0 +1,29 @@
+@import 'variables';
+.message{
+    background-color: white;
+    margin-bottom: 16px;
+
+    
+    .custom-container{
+        width: 100%;
+        background-color: #F03741;
+        color: $alert-text-color;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius:$alert-border-radius;
+
+        svg {
+            margin-left: 16px;
+        }
+        span{
+            font-family:'AptaBold' ;
+            font-weight: Bold;
+            font-size: 18px;
+            line-height: 28px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 16px;
+        }
+    }
+}

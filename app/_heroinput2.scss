@@ -1,0 +1,161 @@
+.heroinput2{
+    .custom-container{
+        background-color: #E5E7E9;
+        border-radius: 16px;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        .layer{
+            margin-bottom: 40px;
+            .breadcrumb{
+                margin-top: 0;
+            }
+        }
+        h1{
+            font-family: 'AptaRegular';
+            font-weight: 'normal';
+            font-size: 60px;
+            line-height: 72px;
+            margin-bottom: 16px;
+    
+        }
+        p{
+            font-family: 'AptaRegular';
+            font-weight: 'normal';
+            font-size: 24px;
+            line-height: 32px;
+
+        }
+        .search-box{
+            margin-top: 70px;
+            .hero-search-box {
+                max-width: 720px;
+                
+                .wrapper {
+                  background-color: white;
+                  border-radius: 100px;
+                  height: 96px;
+                  padding: 0 48px;
+                  margin-top: -48px;
+                  
+                  .input-item {
+                    position:relative;
+                    display: block;
+                    width: 100%;
+                    max-width: none;
+                    opacity: 1;
+                    margin-top: -5px;
+                    
+                    .field-wrapper {
+                      background-color: white;
+                      position: relative;
+                      
+                      .input-field {
+                        position:relative;
+                        display: block;
+                        width: 100%;
+                        background-color: white;
+                        height: 32px;
+                        padding: 5px; // Added padding for better visibility
+                        border: 0;
+                        box-shadow: none;
+                        font-size: 24px; // Match the placeholder font size for consistency
+                        outline: none;
+                      }
+                      
+                      .placeholder {
+                        font-family: 'AptaRegular';
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 32px;
+                        color: #667085;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        padding: 5px;
+                        pointer-events: none;
+                        transition: transform 0.2s, opacity 0.2s;
+                      }
+                      
+                      .input-field:focus + .placeholder,
+                      .input-field:not(:placeholder-shown) + .placeholder {
+                        transform: translateY(-5%);
+                        border:none;
+                        opacity: 0;
+                      }
+                    }
+                  }
+                  
+                  svg {
+                    width: 32px;
+                    height: 32px;
+                    display: inline-flex;
+                    align-items: center;
+                  }
+                }
+            }
+
+        }
+        
+    }
+}
+@media(max-width:425px){
+    .heroinput2{
+        .custom-container{
+            .layer{
+                .breadcrumb {
+                    .breadcrumb-item {
+                        display: none; // Hide all breadcrumb items
+                    }
+                    .breadcrumb-item:first-child {
+                        display: inline-block; // Show only the last (current) breadcrumb item
+                    }
+                }
+            }
+            h1{
+                font-family: 'AptaRegular';
+                font-weight: 'normal';
+                font-size: 36px;
+                line-height: 44px;
+                margin-bottom: 16px;
+
+            }
+            p{
+                font-family: 'AptaRegular';
+                font-weight: 'normal';
+                font-size: 20px;
+                line-height: 30px;
+    
+            }
+            .search-box{
+                .hero-search-box{
+                    .wrapper{
+                      padding-left:24px;
+                      padding-top: 20px;
+                      padding-bottom: 20px;
+                      padding-right:24px;
+                      .input-item{
+                        .field-wrapper{
+                          .placeholder{
+                            font-size: 13px;
+                            line-height: 28px;
+                            
+                          }
+                        }
+                      }
+                      .icon-default{
+                        width:20px;
+                        height:20px;
+                      }
+            
+                    }
+            
+                }
+            }
+        }
+    }
+}
+  
+
+                    

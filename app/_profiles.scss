@@ -1,0 +1,105 @@
+.profiles{
+    margin-top:80px;
+    padding:0;
+    h6{
+        font-family: 'AptaRegular';
+        font-weight: 'normal';
+        font-size:48px;
+        line-height:60px;
+        padding:0;
+    }
+    .row{
+        column-gap: 30px;
+        .col-md-3{
+            padding:0;
+            max-width:255px;
+            border:2px solid #175CD3;
+            border-radius:16px;
+            padding:0;
+            .img-fluid{
+                width:100%;
+                border-bottom:2px solid #175CD3;
+                border-radius: 16px 16px 0px 0px ;
+            }
+            .field-wrapper{
+                margin:24px;
+                .d-flex{
+                    column-gap:8px;
+                    h6{
+                        font-family: 'AptaBold';
+                        font-weight: 'bold';
+                        font-size:18px;
+                        line-height:140%;
+    
+                    }
+                }
+                p{
+                    font-family: 'AptaRegular';
+                    font-weight: 'normal';
+                    font-size:16px;
+                    line-height:24px;
+                    margin-bottom:24px;
+
+                }
+                .wrapper{
+                    p{
+                        margin-bottom:8px;
+                        span{
+                            svg path{
+                                fill:#175CD3;
+                            }
+                            a{
+                                color:black;
+                                font-family: 'AptaRegular';
+                                font-weight: 'normal';
+                                font-size:16px;
+                                line-height:24px;
+                                text-decoration: none;
+                                text-decoration:underline 2px solid #175CD3;
+                                text-underline-offset: 4px;
+
+                            }
+
+                        }
+                    }
+                    
+                }
+
+            }
+            
+        }
+    }
+    .text{
+        margin-top:80px;
+        h6{
+            font-family: 'AptaRegular';
+            font-weight: 'normal';
+            font-size:48px;
+            line-height:60px;
+    
+        }
+        p{
+            font-family: 'AptaRegular';
+            font-weight: 'normal';
+            font-size:18px;
+            line-height:28px;
+
+        }
+
+    }
+  
+}
+@media(max-width:425px){
+    .profiles{
+        margin:7px;
+
+        .row{
+            
+            .col-md-3{
+                margin-bottom: 24px;
+                max-width:none;
+            }
+        }
+    }
+
+}

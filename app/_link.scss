@@ -1,0 +1,84 @@
+.link{
+    margin-top:80px;
+    padding:0;
+    h6{
+        font-family: 'AptaRegular';
+        font-weight: 'normal';
+        font-size:48px;
+        line-height:60px;
+        padding: 0;
+    }
+    .row{ 
+        margin-top:24px;
+        column-gap:30px;
+        .col-md-4{
+
+            max-width:350px;
+            padding:40px;
+            background-color: #F2F3F4;
+            border-left:4px solid #175CD3;
+            border-radius:0 16px 16px 0;
+            h6{
+                margin-top:0;
+                margin-bottom:32px;
+                font-family: 'AptaBold';
+                font-weight:bold;
+                font-size: 20px;
+                line-height:30px;
+            }
+            p{
+                font-family: 'AptaRegular';
+                font-weight:normal;
+                font-size: 18px;
+                line-height:28px;
+            }
+            .links{
+                .link-item{
+                    margin-bottom:8px;
+                    .d-flex{
+                        text-decoration: none;
+                        color: black;
+                        text-decoration:underline 2px solid #175CD3;
+                        text-underline-offset: 4px;
+                        align-items:center;
+                        svg path{
+                            fill:#175CD3;
+                        }
+                        p{
+                            margin:0;
+                            font-family: 'AptaRegular';
+                            font-weight:'normal';
+                            font-size: 18px;
+                            line-height:28px;
+                            margin-left:4px;
+                            
+                        }
+                        
+
+                    }
+                    
+
+                }
+            }
+            .d-flex{
+                column-gap:8px;
+                display:inline-block;
+                svg path{
+                    fill:#175CD3;
+                }
+            }
+        }
+        
+    }
+}
+@media(max-width:425px){
+    .link{
+        margin:7px;
+        .row{
+            .col-md-4{
+                margin-bottom: 24px;
+                max-width:none;
+            }
+        }
+    }
+}

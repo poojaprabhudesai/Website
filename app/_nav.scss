@@ -1,0 +1,177 @@
+.nav {
+    background-color: white;
+
+    .navbar {
+        width: 100%;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        .logo{
+            svg {
+               object-fit:cover; 
+            }
+            h3{
+                font-family: 'AptaBold';
+                font-weight: bold;
+                font-size:20px;
+                line-height:30px;
+                margin-top: 10px;
+                margin-bottom:10px;
+                margin-left:20px;
+                padding-left:0;
+            }
+        }
+        .navbar-controls {
+            display: flex;
+            align-items: center;
+            margin-left:5px;
+
+            .navbar-toggler-search {
+                margin-top: 4px;
+                margin-bottom: 4px;
+                margin-left: 15px;
+                background-color: white;
+                border: none;
+            }
+            .navbar-toggler{
+                margin-right:0;
+                margin-left: 5px;
+                border:none;
+                padding:0;
+                color: #101828;
+                background-color: white;
+                svg{
+                    color:black;
+                }
+                &:active{
+                    border:none;
+                }
+                &:focus{
+                    border:none;
+                }
+    
+            }
+        }
+        
+
+        .collapse {
+            .navbar-nav {
+                align-items: center;
+
+                .nav-item {
+                    position: relative; // Needed for the ::after pseudo-element
+                    color: black;
+                    font-family: 'AptaRegular';
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 28px;
+                    padding-top: 6px;
+                    margin-left: 20px;
+                    text-decoration: none; // Remove default underline if present
+                    .nav-link{
+                        padding: 0;
+                    }
+                    &:first-child {
+                        color: black; // Set color explicitly for the first child
+
+                        &:hover {
+                            color: black; // Ensure hover does not change the color
+                        }
+
+                        .dropdown-menu {
+                            display: none;
+                            border-right: 2px solid #BEC3C8;
+                            border-radius: 16px;
+                            position: absolute; 
+                            top: 100%; 
+                            left: 0;
+                            min-width: 348px;
+                            background-color: white;
+                            padding: 32px;
+                            box-shadow: 4px 8px 4px rgba(0.1, 0.1, 0.1, 0.1);
+                            
+
+                            .dropdown-item {
+                                padding:0;
+                                margin-bottom: 10px;
+                                background-color: white;
+
+                                &:last-child{
+                                    margin-bottom:0;
+                                }
+                            }
+                        }
+
+                        &:hover .dropdown-menu {
+                            display: block;
+                        }
+                    }
+
+                    
+                }
+
+                .search-logo {
+                    padding: 6px 32px;
+
+                    .nav-link {
+                        padding: 0;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.link-underline{
+    background-image: linear-gradient(#BEC3C8,#BEC3C8);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    position: relative; 
+    background-position: 100% 100%;
+    offset: 2px;
+    border-radius:2px;
+    transition:background-size 0.3s ease-in-out;
+    &:hover{
+        background-size:100% 2px;
+        background-position: 0% 100%;
+    }
+}
+@media(max-width:425px){
+    .nav{
+        .navbar{
+            .logo{
+                display:flex;
+                align-items: center;
+              
+                svg{
+                  height:50px;
+                  width:auto;
+                }
+        
+                svg path{
+                    width:100%;
+                }
+                h3{
+                    margin-left:8px;
+                    max-width: 85px;
+                    padding-left: 0;
+                }
+            }
+
+        }
+    }
+    
+
+}
+@media(min-width:1024px){
+    .navbar-controls{
+        .navbar-toggler-search{
+            .search-icon{
+                display: none !important;
+
+            }
+           
+        }
+        
+    }
+}
